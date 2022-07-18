@@ -46,67 +46,50 @@ class MyApp extends StatelessWidget {
                 height: 10.0,
               ),
               SizedBox(
-                width: 130.0,
-                height: 2.0,
-                child: ColoredBox(
-                  color: Colors.teal.shade400,
-                ),
-              ),
-              Container(
-                color: Colors.white,
-                margin: const EdgeInsets.symmetric(
-                  horizontal: 25.0,
-                  vertical: 10.0,
-                ),
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  children: [
-                    const Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                    ),
-                    const SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+88 017 4249 7967',
-                      style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontFamily: "Source Sans Pro",
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(
+                width: 150.0,
                 height: 20.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
               ),
-              Container(
-                color: Colors.white,
+              Card(
                 margin: const EdgeInsets.symmetric(
                   horizontal: 25.0,
                   vertical: 10.0,
                 ),
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  children: [
-                    const Icon(
-                      Icons.email,
-                      color: Colors.teal,
+                child: ListTile(
+                  leading: const Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+88 017 4249 7967',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: "Source Sans Pro",
+                      fontSize: 20.0,
                     ),
-                    const SizedBox(
-                      width: 10.0,
+                  ),
+                ),
+              ),
+              Card(
+                margin: const EdgeInsets.symmetric(
+                  horizontal: 25.0,
+                  vertical: 10.0,
+                ),
+                child: ListTile(
+                  leading: const Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'sarifin439@gmail.com',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: "Source Sans Pro",
+                      fontSize: 20.0,
                     ),
-                    Text(
-                      'emdadulislam439@gmail.com',
-                      style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontFamily: "Source Sans Pro",
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
