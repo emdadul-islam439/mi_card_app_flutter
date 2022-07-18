@@ -14,10 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Mi Card App",
       home: Scaffold(
-        body: Container(
-          height: double.infinity,
-          width: double.infinity,
-          color: Colors.teal,
+        backgroundColor: Colors.teal,
+        body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -38,9 +36,9 @@ class MyApp extends StatelessWidget {
                 "FLUTTER DEVELOPER",
                 style: TextStyle(
                   color: Colors.teal.shade100,
-                  fontSize: 18.0,
+                  fontSize: 20.0,
                   fontFamily: 'Source Sans Pro',
-                  letterSpacing: 3.0,
+                  letterSpacing: 2.5,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -54,37 +52,28 @@ class MyApp extends StatelessWidget {
                   color: Colors.teal.shade400,
                 ),
               ),
-              const SizedBox(
-                height: 20.0,
-              ),
               Container(
-                height: 50.0,
-                width: double.infinity,
+                color: Colors.white,
                 margin: const EdgeInsets.symmetric(
-                  horizontal: 30.0,
+                  horizontal: 25.0,
+                  vertical: 10.0,
                 ),
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 10.0,
-                  vertical: 5.0,
-                ),
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                ),
+                padding: const EdgeInsets.all(10.0),
                 child: Row(
-                  children: const [
-                    Icon(
+                  children: [
+                    const Icon(
                       Icons.phone,
                       color: Colors.teal,
                     ),
-                    SizedBox(
-                      width: 30.0,
+                    const SizedBox(
+                      width: 10.0,
                     ),
                     Text(
                       '+88 017 4249 7967',
                       style: TextStyle(
-                        color: Colors.teal,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16.0,
+                        color: Colors.teal.shade900,
+                        fontFamily: "Source Sans Pro",
+                        fontSize: 20.0,
                       ),
                     ),
                   ],
@@ -94,33 +83,27 @@ class MyApp extends StatelessWidget {
                 height: 20.0,
               ),
               Container(
-                height: 50.0,
-                width: double.infinity,
+                color: Colors.white,
                 margin: const EdgeInsets.symmetric(
-                  horizontal: 30.0,
+                  horizontal: 25.0,
+                  vertical: 10.0,
                 ),
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 10.0,
-                  vertical: 5.0,
-                ),
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                ),
+                padding: const EdgeInsets.all(10.0),
                 child: Row(
-                  children: const [
-                    Icon(
+                  children: [
+                    const Icon(
                       Icons.email,
                       color: Colors.teal,
                     ),
-                    SizedBox(
-                      width: 30.0,
+                    const SizedBox(
+                      width: 10.0,
                     ),
                     Text(
                       'emdadulislam439@gmail.com',
                       style: TextStyle(
-                        color: Colors.teal,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16.0,
+                        color: Colors.teal.shade900,
+                        fontFamily: "Source Sans Pro",
+                        fontSize: 20.0,
                       ),
                     ),
                   ],
